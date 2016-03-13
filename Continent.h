@@ -14,13 +14,28 @@
 #ifndef CONTINENT_H
 #define CONTINENT_H
 
+#include "Country.h"
+
+
+enum ContinentName{
+    north_america,
+    south_america,
+    europe,
+    africa,
+    asia,
+    australia
+};
+
 class Continent {
 public:
     Continent();
     Continent(const Continent& orig);
     virtual ~Continent();
 private:
-
+    ContinentName name;
+    std::vector<Country> countries;
+    Player owner;
+    
 };
 
 #endif /* CONTINENT_H */

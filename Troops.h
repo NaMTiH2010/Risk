@@ -20,7 +20,7 @@ public:
     Troops(const Troops& orig);
     virtual ~Troops();
 private:
-
+    
 };
 
 #endif /* TROOPS_H */

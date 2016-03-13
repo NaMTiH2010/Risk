@@ -19,6 +19,8 @@ public:
     Dice();
     Dice(const Dice& orig);
     virtual ~Dice();
+    
+    std::vector<int> roll(int numberOfDie);
 private:
 
 };
