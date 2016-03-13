@@ -5,20 +5,20 @@
  */
 
 /* 
- * File:   State.cpp
+ * File:   Continent.cpp
  * Author: Matthew Luce <your.name at your.org>
  * 
- * Created on March 13, 2016, 2:22 PM
+ * Created on March 13, 2016, 2:52 PM
  */
 
-#include "State.h"
+#include "Continent.h"
 
-State::State() {
+Continent::Continent() {
 }
 
-State::State(const State& orig) {
+Continent::Continent(const Continent& orig) {
 }
 
-State::~State() {
+Continent::~Continent() {
 }
 

@@ -5,23 +5,23 @@
  */
 
 /* 
- * File:   State.h
+ * File:   Continent.h
  * Author: Matthew Luce <your.name at your.org>
  *
- * Created on March 13, 2016, 2:22 PM
+ * Created on March 13, 2016, 2:52 PM
  */
 
-#ifndef STATE_H
-#define STATE_H
+#ifndef CONTINENT_H
+#define CONTINENT_H
 
-class State {
+class Continent {
 public:
-    State();
-    State(const State& orig);
-    virtual ~State();
+    Continent();
+    Continent(const Continent& orig);
+    virtual ~Continent();
 private:
 
 };
 
-#endif /* STATE_H */
+#endif /* CONTINENT_H */
 

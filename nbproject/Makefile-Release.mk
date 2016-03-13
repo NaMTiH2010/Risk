@@ -36,11 +36,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/Army.o \
+	${OBJECTDIR}/Continent.o \
 	${OBJECTDIR}/Country.o \
 	${OBJECTDIR}/Dice.o \
 	${OBJECTDIR}/Map.o \
 	${OBJECTDIR}/Player.o \
-	${OBJECTDIR}/State.o \
 	${OBJECTDIR}/Troops.o \
 	${OBJECTDIR}/main.o
 
@@ -74,6 +74,11 @@ ${OBJECTDIR}/Army.o: Army.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Army.o Army.cpp
 
+${OBJECTDIR}/Continent.o: Continent.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Continent.o Continent.cpp
+
 ${OBJECTDIR}/Country.o: Country.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -93,11 +98,6 @@ ${OBJECTDIR}/Player.o: Player.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Player.o Player.cpp
-
-${OBJECTDIR}/State.o: State.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/State.o State.cpp
 
 ${OBJECTDIR}/Troops.o: Troops.cpp 
 	${MKDIR} -p ${OBJECTDIR}
